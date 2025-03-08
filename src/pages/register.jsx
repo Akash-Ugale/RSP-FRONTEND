@@ -72,7 +72,7 @@ export default function Register() {
       
       async function createAccount() {
         try {
-          const response = await axios.post("http://localhost:5000/api/register", {
+          const response = await axios.post("https://rsp-new-backend.onrender.com/api/register", {
             name: formData.username,
             gmail: formData.email,
             password: formData.password

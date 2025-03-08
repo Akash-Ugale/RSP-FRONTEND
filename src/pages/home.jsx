@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/recipes", {
+        const response = await fetch("https://rsp-new-backend.onrender.com/api/recipes", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

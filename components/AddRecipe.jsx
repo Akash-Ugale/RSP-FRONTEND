@@ -48,7 +48,7 @@ export default function AddRecipe({ onClose, onAddRecipe }) {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/recipes/add", {
+      const response = await fetch("https://rsp-new-backend.onrender.com/api/recipes/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

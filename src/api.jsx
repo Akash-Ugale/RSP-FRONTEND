@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api"; //  Corrected Base API URL
+const API_URL = "https://rsp-new-backend.onrender.com/api"; //  Corrected Base API URL
 
 // **Add Recipe API**
 export const addRecipe = async (recipeData, token) => {
