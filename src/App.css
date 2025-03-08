@@ -1,0 +1,404 @@
+/* Import Google Font - Lobster */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App img {
+  border-radius: 10px;
+  width: 70%;
+  aspect-ratio: 16/9;
+}
+.main-component {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  background-color: black;
+}
+
+.left-div {
+  padding: 20px;
+  text-align: center;
+
+  & h1 {
+    font-size: 3rem;
+  }
+  & h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #ff6347;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lobster', cursive;
+  }
+  & button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+  }
+}
+
+
+
+.left-div p {
+  font-size: 16px;
+  color: white; /* Ensure text is visible on dark background */
+  background: rgba(0, 0, 0, 0.6); /* Add semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.left-div button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.left-div button:hover {
+  background-color: #0056b3;
+}
+.right-div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-component {
+    grid-template-columns: 1fr;
+  }
+
+  .App img {
+    min-width: 300px;
+  }
+}
+.custom-nav {
+  background:orange !important;
+}
+
+/* Centering the form */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+* {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.login-form {
+  width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+  position: relative;  /* Changed from absolute to relative */
+  animation: none;  /* Disable any unintended animations */
+}
+
+
+/* Form Heading */
+.login-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form Labels */
+.login-form .form-label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.login-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.login-form .btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.login-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Register Link */
+.login-form p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.login-form a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Centering the register form */
+.register-form {
+  width: 450px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.register-form h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+/* Form Heading */
+.register-form h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form Labels */
+.register-form .form-label {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Input Fields */
+.register-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.register-form .btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.register-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Register Link */
+.register-form p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.register-form a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-form a:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox Alignment */
+.register-form .form-check {
+  text-align: left;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .register-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Login Page Background */
+.login-page {
+  background-color: black; /* Dark background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.register-page {
+  background-color: black; /* Dark background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.home-page{
+  background-color: black; /* Dark background color */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+.custom-navbar1 {
+  position: fixed; /* Keep navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays above content */
+  background-color: #ff7043;
+  padding: 5px 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white !important;
+}
+
+.navbar {
+  background-color: #ff7043 !important; /* Override Bootstrap */
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px; /* Adjust padding for better spacing */
+}
+
+/* 🆕 Buttons Group - Align Left */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reduce gap between buttons */
+  height : 32 px;
+}
+
+/* Button Styles */
+.add-recipe-btn,
+.saved-recipe-btn
+ {
+  
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Reduce padding for compact buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #0056b3;
+}
+.logout-btn {
+  
+  color: white;
+  border: none;
+  padding: 5px 10px; /* Reduce padding for compact buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* Individual Button Colors */
+.saved-recipe-btn {
+  background-color: #ffc107;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+}
+
+/* Hover Effects */
+.add-recipe-btn:hover {
+  background-color: #0056b3;
+}
+
+.saved-recipe-btn:hover {
+  background-color: #e0a800;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+
+
+
+.nav-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  height: 32px; /* Ensure uniform height */
+}
